@@ -16,7 +16,7 @@ import seehope.model.SubjectModel;
 
 public class SubjectDao {
 	/**
-	 * 更新学生数据
+	 * 更新课程数据
 	 */
 	public static String editSubject(SubjectModel subject){
 		String result ="002";
@@ -50,7 +50,7 @@ public class SubjectDao {
 	}
 	
 	/**
-	 * 获取学生
+	 * 获取课程
 	 */
 	public static SubjectModel getSubjectById(String sub_id){
 		String sql = "SELECT * FROM SEC_subject WHERE sub_id=?";
@@ -83,7 +83,7 @@ public class SubjectDao {
 	}
 
 	/**
-	 * 删除学生
+	 * 删除课程
 	 */
 	public static boolean deleteSubject(String[] sub_ids) {
 		boolean result = true;
@@ -113,7 +113,7 @@ public class SubjectDao {
 	}
 
 	/**
-	 * 增添学生
+	 * 增添课程
 	 */
 	public static String addSubject(SubjectModel subject) {
 		String result = "002";
@@ -153,7 +153,7 @@ public class SubjectDao {
 	}
 
 	/**
-	 * 查询学生是否存在
+	 * 查询课程是否存在
 	 */
 	public static boolean hasSubject(String sub_id) {
 		Connection conn = DBUtil.getInstance().getConnection();
